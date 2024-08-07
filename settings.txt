@@ -10,23 +10,61 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let flower_on = true;
+let flower_size = 0.7;
+let flower_x = 0;
+let flower_y = 0;
+
+let heart_on = true;
+let heart_size = 0.65;
+let heart_x = 90;
+let heart_y = 60;
+
+let star_on = true;
+let star_size = 1;
+let star_x = 100;
+let star_y = 100;
+
+let heart_colour;
+let star_colour;
+let flower_colour;
+let flower_mid_colour;
+let back_colour;
+
+let pink;
+let yellow;
+let orange;
+let hot_pink;
+let white;
+let tanish_pink;
+let red;
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  //DEVELOP_GLYPH, GRID_WALLPAPER, GLIDE_WALLPAPER
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  //FIT_TO_SCREEN, NINE_LANDSCAPE, NINE_PORTRAIT, A3
   pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+  //Colours
+  pink = color(255, 176, 241);
+  yellow =color(253, 251, 120);
+  orange = color(252, 166, 36);
+  hot_pink = color(250, 55, 87);
+  white = color(255, 255, 255);
+  tanish_pink = color (248, 105, 93);
+  red = color (250,11, 11);
+
+  heart_colour = pink;
+  star_colour = yellow;
+  flower_colour = orange;
+  flower_mid_colour = hot_pink;
+  back_colour = white;
 }
 
 /////////////////////////////////
@@ -51,4 +89,118 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_width  = 100;
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 0;
+}//your parameter variables go here!
+let flower_on = true;
+let flower_size = 0.7;
+let flower_x = 0;
+let flower_y = 0;
+
+let heart_on = true;
+let heart_size = 0.65;
+let heart_x = 90;
+let heart_y = 60;
+
+let star_on = false;
+let star_size = 1;
+let star_x = 100;
+let star_y = 100;
+
+let heart_colour;
+let star_colour;
+let flower_colour;
+let flower_mid_colour;
+let back_colour;
+
+let pink;
+let yellow;
+let orange;
+let hot_pink;
+let white;
+let tanish_pink;
+let red;
+
+function setup_wallpaper(pWallpaper) {
+  //DEVELOP_GLYPH, GRID_WALLPAPER, GLIDE_WALLPAPER
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  //FIT_TO_SCREEN, NINE_LANDSCAPE, NINE_PORTRAIT, A3
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+  //Colours
+  pink = color(255, 176, 241);
+  yellow =color(253, 251, 120);
+  orange = color(252, 166, 36);
+  hot_pink = color(250, 55, 87);
+  white = color(255, 255, 255);
+  tanish_pink = color (248, 105, 93);
+  red = color (250,11, 11);
+
+  heart_colour = hot_pink;
+  star_colour = yellow;
+  flower_colour = tanish_pink;
+  flower_mid_colour = white;
+  back_colour = orange;
 }
+Wallpaper3
+
+//your parameter variables go here!
+let flower_on = true;
+let flower_size = 0.65;
+let flower_x = 0;
+let flower_y = 0;
+
+let heart_on = true;
+let heart_size = 0.7;
+let heart_x = 90;
+let heart_y = 60;
+
+let star_on = false;
+let star_size = 1;
+let star_x = 100;
+let star_y = 100;
+
+let heart_colour;
+let star_colour;
+let flower_colour;
+let flower_mid_colour;
+let back_colour;
+
+let pink;
+let yellow;
+let orange;
+let hot_pink;
+let white;
+let tanish_pink;
+let red;
+
+function setup_wallpaper(pWallpaper) {
+  //DEVELOP_GLYPH, GRID_WALLPAPER, GLIDE_WALLPAPER
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  //FIT_TO_SCREEN, NINE_LANDSCAPE, NINE_PORTRAIT, A3
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+  //Colours
+  pink = color(255, 176, 241);
+  yellow =color(253, 251, 120);
+  orange = color(252, 166, 36);
+  hot_pink = color(250, 55, 87);
+  white = color(255, 255, 255);
+  tanish_pink = color (248, 105, 93);
+  red = color (250,11, 11);
+
+  heart_colour = hot_pink;
+  star_colour = yellow;
+  flower_colour = tanish_pink;
+  flower_mid_colour = white;
+  back_colour = orange;
