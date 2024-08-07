@@ -1,12 +1,15 @@
 //your parameter variables go here!
+let flower_on = true;
 let flower_size = 0.7;
 let flower_x = 0;
 let flower_y = 0;
 
+let heart_on = true;
 let heart_size = 0.65;
 let heart_x = 90;
 let heart_y = 60;
 
+let star_on = true;
 let star_size = 1;
 let star_x = 100;
 let star_y = 100;
@@ -42,11 +45,13 @@ function setup_wallpaper(pWallpaper) {
   orange = color(252, 166, 36);
   hot_pink = color(250, 55, 87);
   white = color(255, 255, 255);
+  tanish_pink = color (248, 105, 93)
+  red = color (250,11, 11)
 
-  heart_colour = pink;
+  heart_colour = hot_pink;
   star_colour = yellow;
-  flower_colour = orange;
-  flower_mid_colour = hot_pink;
+  flower_colour = pink;
+  flower_mid_colour = orange;
   back_colour = white;
 }
 
@@ -92,21 +97,27 @@ function star() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
+  if (flower_on == true) {
   push();
   translate(flower_x, flower_y);
   scale(flower_size);
   flower();
   pop();
+  }
 
+  if (heart_on == true) {
   push();
   translate(heart_x, heart_y);
   scale(heart_size);
   heart();
   pop();
+  }
 
+  if (star_on == true) {
   push();
   translate(star_x, star_y);
   scale(star_size);
   star();
   pop();
+  }
 }
