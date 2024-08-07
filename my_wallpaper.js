@@ -1,15 +1,15 @@
 //your parameter variables go here!
-let flower_on = true;
+let flower_on = false;
 let flower_size = 0.65;
 let flower_x = 0;
 let flower_y = 0;
 
-let heart_on = true;
+let heart_on = false;
 let heart_size = 0.7;
 let heart_x = 90;
 let heart_y = 60;
 
-let star_on = false;
+let star_on = true;
 let star_size = 1;
 let star_x = 100;
 let star_y = 100;
@@ -32,7 +32,7 @@ function setup_wallpaper(pWallpaper) {
   //DEVELOP_GLYPH, GRID_WALLPAPER, GLIDE_WALLPAPER
   pWallpaper.output_mode(GLIDE_WALLPAPER);
   //FIT_TO_SCREEN, NINE_LANDSCAPE, NINE_PORTRAIT, A3
-  pWallpaper.resolution(A3);
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
