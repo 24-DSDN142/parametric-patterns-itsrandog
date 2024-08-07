@@ -1,15 +1,15 @@
 //your parameter variables go here!
 let flower_on = true;
-let flower_size = 0.7;
+let flower_size = 0.65;
 let flower_x = 0;
 let flower_y = 0;
 
 let heart_on = true;
-let heart_size = 0.65;
+let heart_size = 0.7;
 let heart_x = 90;
 let heart_y = 60;
 
-let star_on = true;
+let star_on = false;
 let star_size = 1;
 let star_x = 100;
 let star_y = 100;
@@ -25,13 +25,14 @@ let yellow;
 let orange;
 let hot_pink;
 let white;
-
+let tanish_pink;
+let red;
 
 function setup_wallpaper(pWallpaper) {
   //DEVELOP_GLYPH, GRID_WALLPAPER, GLIDE_WALLPAPER
   pWallpaper.output_mode(GLIDE_WALLPAPER);
   //FIT_TO_SCREEN, NINE_LANDSCAPE, NINE_PORTRAIT, A3
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
@@ -45,14 +46,14 @@ function setup_wallpaper(pWallpaper) {
   orange = color(252, 166, 36);
   hot_pink = color(250, 55, 87);
   white = color(255, 255, 255);
-  tanish_pink = color (248, 105, 93)
-  red = color (250,11, 11)
+  tanish_pink = color (248, 105, 93);
+  red = color (250,11, 11);
 
   heart_colour = hot_pink;
   star_colour = yellow;
-  flower_colour = pink;
-  flower_mid_colour = orange;
-  back_colour = white;
+  flower_colour = tanish_pink;
+  flower_mid_colour = white;
+  back_colour = orange;
 }
 
 function wallpaper_background() {
